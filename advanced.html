@@ -1,0 +1,51 @@
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            input[type=submit] {
+                background-color: aqua;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            input[type=search] {
+                position:relative; left:80px;
+            }
+            .last {
+                padding-left : 140px;
+            }
+            a {
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Welcome to advanced search </h1>
+        <a href="search.html">Google search</a>
+        <a href="picture.html">Google picture search</a>
+            <form method="get" action="https://www.google.com/search">
+                <table>
+                    <tr>
+                        <th>Find pages with...</th>
+                        <th></th>
+                        <th class="last">To do this in search box</th>
+                    </tr> 
+                    <tr>
+                        <td>input search word</td>
+                        <td><input type="search" name="as_q" placeholder="Search.." /> </td>
+                        <td class="last"> Type the important words</td>
+                    </tr>
+                    <tr>
+                        <td>Please input exact word </td>
+                        <td><input type="search" name="as_epq" placeholder="Search.." /></td>
+                        <td class="last">put exact word in quotes</td>
+                    </tr>
+                    <tr>
+                        <td>Any of these words</td>
+                        <td><input type="search" name="as_oq" placeholder="Search.." /></td>
+                        <td class="last">Type OR between words</td>
+                    </tr>
+                </table>
+                    <input type="submit" value="Google search" />
+            </form>
+    </body>
+</html>
